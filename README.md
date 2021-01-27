@@ -1,3 +1,37 @@
+JWT Authorization in Flask
+
+``` bash
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# serve back-end at localhost:5000
+FLASK_APP=run.py flask run
+```
+
+
+# user auth 
+1> takes username and password and returns access token, 
+2> stores in DB.
+3> Logins the user w.r.t correct username and password else sends error.
+4> Able refresh the access tokens updates User's Information
+5> Logs out user
+
+
+Endpoints
+
+All of these endpoints should be written from a user's perspective.
+
+    User Registration
+    Login (token based) - should return a token, given valid credentials
+    Logout - logs a user out
+    Update a User's Information
+    Delete a User
+
+# Choosing Flask as it has modules of JWT and also used hsh for access tokens
+# with more time can do sophisticated retieval and updates 
+
+
 # Fender Digital Platform Engineering Challenge
 
 ## Description
